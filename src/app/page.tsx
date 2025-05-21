@@ -767,7 +767,7 @@ export default function Home() {
                       opacity: [0, 1, 1, 0],
                     }}
                     transition={{
-                      duration: 20,
+                      duration: 10,
                       repeat: Infinity,
                       repeatType: "loop",
                       times: [0, 0.4, 0.6, 1],
