@@ -115,7 +115,7 @@ export default function Home() {
     setTimeout(() => setToast({ visible: false, message: "", type: "" }), 3000);
   };
 
-  const scrollToSection = (ref: React.RefObject<HTMLDivElement>) => {
+  const scrollToSection = (ref: React.RefObject<HTMLDivElement | null>) => {
     if (ref.current) {
       ref.current.scrollIntoView({ behavior: "smooth" });
       setMenuOpen(false);
