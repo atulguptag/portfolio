@@ -266,7 +266,7 @@ export default function Home() {
       duration: "May 2025",
       featured: true,
       tags: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
-      link: "https://atulguptag.github.io",
+      link: "https://portfolio-atul-guptas-projects.vercel.app/",
       description: [
         "Developed a modern, responsive portfolio website using Next.js 13+ with TypeScript, showcasing professional experience and projects with an elegant design.",
         "Implemented smooth animations and transitions using Framer Motion, creating an engaging user experience with scroll-triggered animations and interactive elements.",
