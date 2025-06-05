@@ -1600,7 +1600,7 @@ export default function Home() {
                   </div>
                   <div>
                     <p className="font-medium">Phone</p>
-                    <p className={`text-md ${subtextClass}`}>+91 7000950845</p>
+                    <p className={`text-md ${subtextClass}`}>+91 7000XXXXXX</p>
                   </div>
                 </div>
 
