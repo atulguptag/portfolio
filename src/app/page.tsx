@@ -71,6 +71,7 @@ interface Experience {
   title: string;
   company: string;
   duration: string;
+  location: string;
   responsibilities: string[];
 }
 
@@ -266,7 +267,7 @@ export default function Home() {
       duration: "May 2025",
       featured: true,
       tags: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
-      link: "https://portfolio-atul-guptas-projects.vercel.app/",
+      link: "#",
       description: [
         "Developed a modern, responsive portfolio website using Next.js 13+ with TypeScript, showcasing professional experience and projects with an elegant design.",
         "Implemented smooth animations and transitions using Framer Motion, creating an engaging user experience with scroll-triggered animations and interactive elements.",
@@ -304,29 +305,29 @@ export default function Home() {
         "Utilized a full-stack tech, including Python, HTML, CSS, JavaScript, and SQLite, optimizing the user interface for seamless browsing and purchase flow across devices.",
       ],
     },
-    {
-      id: "user-auth",
-      title: "User Authentication System",
-      category: "Full-Stack App",
-      duration: "Oct - Nov 2023",
-      featured: true,
-      tags: ["React", "Django", "JWT", "REST API"],
-      link: "https://user-auth-using-react-django.netlify.app/",
-      description: [
-        "Developed a robust full-stack web application for user authentication using React for the frontend and Django REST Framework for the backend.",
-        "Implemented a token-based authentication system using JSON Web Tokens (JWT), allowing users to authenticate without the need for traditional sessions.",
-        "Built a secure login and registration system with email verification, password strength validation, and bcrypt for hashing passwords.",
-        "Developed a password reset functionality with email verification to help users recover their accounts securely and effortlessly.",
-      ],
-    },
   ];
 
   const experiences: Experience[] = [
     {
+      id: "outlier",
+      title: "AI Frontend Engineer",
+      company: "Outlier.ai",
+      duration: "April 2025 - Present",
+      location: "Remote",
+      responsibilities: [
+        "Craft creative prompts that guide AI models to build web applications across various categories like social media platforms, games, and dashboards, ranging from simple requests to detailed technical specifications.",
+        "Evaluate and enhance AI-generated code by fixing build errors and runtime issues and transforming basic outputs into production-ready applications using TypeScript, Next.js, React, and Tailwind CSS.",
+        "Ensure design excellence by applying modern design trends and perfecting typography, color palettes, spacing, and responsive layouts to create visually stunning interfaces that match Fortune 500 company standards.",
+        "Maintain quality standards by reviewing other contributors' work, providing actionable feedback, and acting as a gatekeeper to ensure only the best, fully functional applications reach clients.",
+        "Help train AI models to become industry-leading front-end code generators while bridging the gap between human creativity and AI capability in building beautiful, functional web experiences.",
+      ],
+    },
+    {
       id: "moneyy",
       title: "Python Developer Intern",
       company: "Moneyy.ai",
-      duration: "Feb 2025 - Present",
+      duration: "Feb 2025 - May 2025",
+      location: "Remote",
       responsibilities: [
         "Developed and maintained multiple Python scripts for stocks processing and analysis, ensuring high efficiency and accuracy.",
         "Collaborated with the team members to design and implement backtesting on Stocks, improving the accuracy of predictions by 25%.",
@@ -337,7 +338,8 @@ export default function Home() {
       id: "worksnet",
       title: "Software Developer Intern",
       company: "WorksNet Pvt. Limited",
-      duration: "June 2024 - December 2024",
+      duration: "Jun 2024 - Dec 2024",
+      location: "Remote",
       responsibilities: [
         "Architected and implemented full-stack educational management system using Python (Django) and React.js, resulting in 20% revenue growth through automation of examination workflows.",
         "Designed and implemented a Social Auto Posting features especially LinkedIn auto-posting system to schedule and share posts automatically on the company's page.",
@@ -829,12 +831,12 @@ export default function Home() {
                   className={`text-lg ${subtextClass} space-y-4 max-w-md ml-auto`}
                 >
                   <p className="font-sans leading-relaxed">
-                    A dedicated and skilled Python Programmer with
-                    specialization in Django framework, committed to staying
-                    current with new technologies & industry trends. Quick
-                    learning in adapting to Generative AI and new tech stacks,
-                    ensuring seamless integration of cutting-edge innovations
-                    into projects.
+                    A dedicated and skilled Full Stack Developer with
+                    specialization in Next.js, committed to staying current with
+                    new technologies & industry trends. Quick learning in
+                    adapting to Generative AI and new tech stacks, ensuring
+                    seamless integration of cutting-edge innovations into
+                    projects.
                   </p>
                   <div className="flex space-x-4 mt-6 pt-4 border-t border-gray-800">
                     <a
@@ -963,7 +965,7 @@ export default function Home() {
             </div>
 
             <p className={`text-lg ${subtextClass} mb-6 leading-relaxed`}>
-              I am a self-taught python programmer with a deep passion for
+              I am a self-taught Full Stack Developer with a deep passion for
               creating innovative and engaging web projects. I am committed to
               staying up-to-date with the latest trends and best practices in
               the industry. I&apos;ve gained a wealth of knowledge and skills
@@ -1406,7 +1408,7 @@ export default function Home() {
                   </p>
                 </div>
                 <span className={`text-md ${subtextClass} mt-2 md:mt-0`}>
-                  {exp.duration}
+                  {exp.duration} | {exp.location}
                 </span>
               </div>
 
